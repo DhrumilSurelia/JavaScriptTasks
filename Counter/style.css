@@ -1,0 +1,38 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: normal;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: lightcyan;
+}
+
+.Text{
+    text-align: center;
+    justify-content: center;
+    min-height: 40vh; 
+}
+.Text > button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 59%;
+    background-color: rgba(255, 255, 255, .75);
+    padding: 20px 35px;
+    font-size: 50px;
+    box-shadow: 0 5px #999;
+}
+
+.Text > button:hover {
+    background-color: cyan;
+}
+
+.Text button:active {
+    background-color: cyan;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
