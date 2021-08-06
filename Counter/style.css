@@ -29,30 +29,44 @@
     cursor: pointer;
     text-align: center;
     font-size: 35px;
-    border: 1px solid black;
     border-radius: 55%;
     background-color: rgba(255, 255, 255, .75);
     padding: 8px 18px;
+    border:none;
+    box-shadow: 0 5px #999;
 }
 
 .Text > button:hover {
     background-color: rgb(3, 165, 3);
 }
 
+.Text > button:active {
+    background-color: rgb(3, 165, 3);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
 .Button > button {
     position: absolute;
     bottom: 1rem;
     right: 6rem;
+    border: none;
     display: inline-block;
     cursor: pointer;
     text-align: center;
     font-size: 40px;
-    border: 1px solid black;
     border-radius: 55%;
     background-color: rgba(255, 255, 255, .75);
     padding: 6px 22px;
+    box-shadow: 0 5px #999;
 }
 
 .Button button:hover {
     background-color: crimson;
+}
+
+.Button > button:active {
+    background-color: crimson;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
 }
