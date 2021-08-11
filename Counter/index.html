@@ -6,23 +6,50 @@
     <meta name="description" content="Counter application with Increment and Decrement">
     <meta http-equiv="refresh" content="300">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit">
     <title>Counter Application</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+    <style>
+        *, *::after, *::before {
+            font-family: "Gill Sans", sans-serif;
+            font-weight: bold;
+        }
+        .bottom-right{
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            text-align: center;
+            padding: 8px 18px;
+        }
+        .Text{
+            text-align: center;
+            justify-content: center;
+            padding: 180px 100px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
+    <div class="jumbotron text-center">
         <h2>Counter Application</h2>
     </div>
-    <div class = "Text">
-        <div>
+    <div class="row">
+        <div class="Text">
             <h1 id="Text"><span></span></h1>
         </div>
-    <div class="Button">
-        <button id="decrement">-</button>
     </div>
-        <button id="increment">+</button>
+    
+    <div class="row">
+        <div class="bottom-right">
+            <div class="btn btn-group-lg">
+                <button class="btn btn-danger" id="decrement" value="submit">-</button>
+                <button class="btn btn-success" id="increment" value="submit">+</button>
+            </div>   
+        </div>
     </div>
 </body>
 </html>
