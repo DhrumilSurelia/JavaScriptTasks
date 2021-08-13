@@ -2,14 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Calculator Application">
+    <meta http-equiv="refresh" content="300">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="Calculator-grid">
+    <div class="jumbotron text-center" style="height: 10rem;">
+        <h2>Calculator Application</h2>
+    </div>
+    <div class="Calculator-grid" style="height: fit-content;">
         <div class="output">
             <div data-previous class = "previous-operand"></div>
             <div data-current class = "current-operand"></div>
